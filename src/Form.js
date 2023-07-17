@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./form.css"
 const Form=({form,handlechange})=>{
 
 return(
-<div>
+<div className="dv">
 <form>
     <input type='text' name='isim' placeholder='isim soyisim giriniz' onChange={handlechange} value={form.isim}/>
     <select name='sehir' onChange={handlechange} value={form.sehir}>
       <option value="">Lütfen şehri seçiniz</option>
       <option value="Kilis">Kilis</option>
       <option value="Ankara">Ankara</option>
-      <option value="İstanbul">İstambul</option>
+      <option value="İstanbul">İstanbul</option>
     </select>
     <input type='date' name='dogum' onChange={handlechange} value={form.dogum}/>
     <input type='color' name='renk' onChange={handlechange} value={form.renk}/>

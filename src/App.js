@@ -13,7 +13,7 @@ function App() {
   }
   return (
     <div >
-      <h2>Bilgilerinizi giriniz</h2>
+      <h2 className='ht'>Bilgilerinizi giriniz</h2>
       <Routes>
         <Route path='/' exact element={<Form form={form} handlechange={handlechange}/>} />
         <Route path='/bilgiler'  element={<Info form={form} />}/> 
